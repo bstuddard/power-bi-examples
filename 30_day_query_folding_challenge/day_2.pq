@@ -10,7 +10,7 @@ let
     
     // Expand and filter Geo dim (Exclude DE or GB CountryRegionCode)
     expanded_geo = Table.ExpandRecordColumn(filtered_reseller, "DimGeography", {"CountryRegionCode", "EnglishCountryRegionName"}),
-    filtered_geo = Table.SelectRows(expanded_geo, each [CountryRegionCode] <> "DE" and [CountryRegionCode] <> "GB"),
+    filtered_geo = Table.SelectRows(expanded_geo, each not List.Contains({"DE", "GB"}, [CountryRegionCode])),
 
     // Select only necessary columns
     final_columns = Table.SelectColumns(filtered_geo, {"ResellerKey", "BusinessType", "ResellerName", "NumberEmployees", 
