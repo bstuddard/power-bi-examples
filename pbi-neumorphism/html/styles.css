@@ -1,0 +1,12 @@
+body{
+    background-color: #EDCFCE;
+}
+
+.neu_box{
+    margin: 100px;
+    box-shadow:  10px 10px 30px #c9b0af, 
+                -10px -10px 30px #ffeeed;
+    border-radius: 70px;
+    width: 800px;
+    height: 400px;
+}
