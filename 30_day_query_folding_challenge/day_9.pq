@@ -53,8 +53,7 @@ let
     ),
 
     // Sort Rows
-    row_sorted = Table.Sort(row_sort_order, {"row_sort_column", Order.Ascending}),
-    final_result = Table.RemoveColumns(row_sorted,{"row_sort_column"})
+    row_sorted = Table.Sort(row_sort_order, {"row_sort_column", Order.Ascending})
 
 in
-    final_result
+    row_sorted
