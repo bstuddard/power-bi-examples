@@ -1,0 +1,7 @@
+custom-ai-api/.vscode/launch.json
+custom-ai-api/.vscode/settings.json
+custom-ai-api/.pylintrc
+custom-ai-api/pbi/pbi_api_ml.pbix
+custom-ai-api/python_logic/test_api.txt
+custom-ai-api/python_logic/PA_Only/config.py
+custom-ai-api/python_logic/testing.py
