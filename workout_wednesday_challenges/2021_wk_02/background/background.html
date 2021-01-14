@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Background</title>
+        <meta charset="utf-8">
+        <style>
+            .background_limit{
+                background-image: linear-gradient(to top left, #cf062846, #005cb9d3);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 1280px;
+                height: 720px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .spacer{
+                height: 64px;
+            }
+
+            .small_spacer{
+                height: 8px;
+            }
+
+            .main_flex_container{
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+
+            .glass_element{
+                color: #ecf0f1;
+                border-radius: 8px;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                border:solid 1px rgba(255, 255, 255, 0.3);
+                background-clip: padding-box;
+                backdrop-filter: blur(10px);
+                flex-grow: 1;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background_limit">
+            <div class="spacer"></div>
+            <div class="main_flex_container">
+                <div class="glass_element"></div>
+                <div class="glass_element"></div>
+                <div class="glass_element"></div>
+            </div>
+            <div class="small_spacer"></div>
+        </div>
+    </body>
+</html>
